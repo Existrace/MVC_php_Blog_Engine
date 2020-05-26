@@ -1,0 +1,15 @@
+<head>
+    <link rel="stylesheet" href="/app/public/css/404.css"/>
+</head>
+<body>
+    <h1>Erreur 404</h1>
+    <p class="zoom-area"> La page que vous tentez d'atteindre n'existe pas...</p>
+    <section class="error-container">
+        <span class="four"><span class="screen-reader-text">4</span></span>
+        <span class="zero"><span class="screen-reader-text">0</span></span>
+        <span class="four"><span class="screen-reader-text">4</span></span>
+    </section>
+    <div class="link-container">
+        <a href="<?=\ProjetBlog\core\Config::MAIN_PAGE ?>" class="more-link">Retourner à l'accueil</a>
+    </div>
+</body>

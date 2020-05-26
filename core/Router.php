@@ -2,8 +2,6 @@
 
 namespace ProjetBlog\core\Router;
 
-use Post;
-
 /**
  * Class Router
  */
@@ -12,22 +10,14 @@ class Router
 
     private string $location;
 
-    public function __construct()
-    {
-        // Permet les constructeurs multiples
-        $arguments = func_get_args();
-        $numberOfArguments = func_num_args();
-
-        if (method_exists($this, $function = '__construct'.$numberOfArguments)) {
-            call_user_func_array(array($this, $function), $arguments);
-        }
-    }
-
     /**
-     * Permet de définir une location par défaut à la construction de l'objet
+     * Router constructor.
+     * Oblige à renseigner l'action du contrôleur principal
+     * qui sera executée dès le chargement
      * @param $location
      */
-    public function __constructWithLocation($location) {
+    public function __construct($location)
+    {
         $this->setDefaultLocation($location);
     }
 
