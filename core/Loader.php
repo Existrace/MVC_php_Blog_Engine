@@ -38,7 +38,8 @@ class Loader
         $paths = array(
             'app/models/Manager',
             'app/models/Entity',
-            'Services/'
+            'services/',
+            'core/'
         );
         foreach($paths as $path) {
             $file = $path . '/' . $class . '.php';

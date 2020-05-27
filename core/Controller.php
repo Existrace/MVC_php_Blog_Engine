@@ -14,6 +14,11 @@ abstract class Controller {
         // Démarre le buffer de sortie pour le chargement des vues
         ob_start();
 
+        extract($data);
+
+        // Démarre le buffer de sortie pour le chargement des vues
+        ob_start();
+
         // Le fichier à inclure peut être soit un .php, soit un .html
         if(file_exists(ROOT.'app/views/'.strtolower(get_class($this)).'/'.$view.'.php')) {
             require_once(ROOT.'app/views/'.strtolower(get_class($this)).'/'.$view.'.php');
