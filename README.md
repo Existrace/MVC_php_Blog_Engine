@@ -6,9 +6,9 @@
 
 <strong>Very simple Framework MVC with PHP 7.4</strong>
 
-1 - Run composer install
-2 - Open core/Config.php and enter your database configuration data.
-3 - Enjoy !
+- Run composer install
+- Open core/Config.php and enter your database configuration data.
+- Enjoy !
 
 
 <strong>More about Configuration</strong>
